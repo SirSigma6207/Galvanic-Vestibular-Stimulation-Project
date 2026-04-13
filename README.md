@@ -24,7 +24,7 @@ During testing, the direction of this current determines the output:
 - One LED lights up when the current flows in one direction 
 - The other LED lights up when the current reverses 
 
-This behavior demonstrates controlled bidirectional current flow, analogous to the operation of a GVS system.
+###This behavior demonstrates controlled bidirectional current flow, analogous to the operation of a GVS system.
 ---
 
 ## ⚙️ System Architecture
@@ -50,7 +50,6 @@ Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 - ECG patches
 - Conductive Gel
 
----
 
 
 
@@ -64,13 +63,11 @@ Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 - Receives UDP data
 - Outputs analog signal via DAC
 
----
 
 ## 📸 Demo
 
 YOUTUBE: https://www.youtube.com/watch?v=t6M_l-YdFlc
 
----
 
 ## 🧠 Key Concepts
 
@@ -89,6 +86,6 @@ This project is a **simulation and demonstration system** intended for education
 It is **not a medical device**.  
 Any real-world application involving human subjects must be conducted under proper supervision and safety protocols must be strictly adhered to when interfacing with biological systems.
 
----
+
 
 
