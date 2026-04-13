@@ -29,9 +29,11 @@ Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 - ESP32
 - LM358 Op-Amp
 - Resistors (500Ω)
-- LEDs (2)
+- LEDs (2)  //testing purpouses
 - Power Supply (±9V)
 - Breadboard & wiring
+- ECG patches
+- Conductive Gel
 
 ---
 
@@ -41,11 +43,12 @@ The ESP32 receives control input over WiFi and converts it into an analog voltag
 
 A reference voltage of 1.65V is used as a virtual ground. The op-amp circuit, configured with negative feedback, converts the difference between the input voltage and the reference into a controlled current.
 
-Depending on the direction of this current:
+During testing depending on the direction of this current:
 - One LED lights up for positive deviation
 - The other LED lights up for negative deviation
-
 This demonstrates bidirectional current flow similar to GVS systems.
+
+We implement this to the body
 
 ---
 
@@ -61,18 +64,9 @@ This demonstrates bidirectional current flow similar to GVS systems.
 
 ---
 
-## ⚠️ Disclaimer
-
-This project is a **simulation and demonstration system** intended for educational purposes.
-
-It is **not a medical device**.  
-Any real-world application involving human subjects must be conducted under proper medical supervision and ethical approval.
-
----
-
 ## 📸 Demo
 
-*(Add images or videos here)*
+YOUTUBE: https://www.youtube.com/watch?v=t6M_l-YdFlc
 
 ---
 
@@ -85,3 +79,14 @@ Any real-world application involving human subjects must be conducted under prop
 - Bidirectional current control
 
 ---
+
+## ⚠️ Disclaimer
+
+This project is a **simulation and demonstration system** intended for educational purposes.
+
+It is **not a medical device**.  
+Any real-world application involving human subjects must be conducted under proper supervision and safety protocols must be strictly adhered to when interfacing with biological systems.
+
+---
+
+
