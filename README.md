@@ -57,7 +57,7 @@ Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 ## 💻 Software Components
 
 ### 🔹 Python Controller
-- Reads keyboard input
+- Reads keyboard input using pythons keyboard library
 - Sends real-time UDP packets
 
 ### 🔹 ESP32 Firmware
