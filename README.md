@@ -22,9 +22,10 @@ A dual supply of ±9V is used to power the op-amp, providing sufficient headroom
 
 During testing, the direction of this current determines the output:
 - One LED lights up when the current flows in one direction 
-- The other LED lights up when the current reverses 
+- The other LED lights up when the current reverses
+  
+This behavior demonstrates controlled bidirectional current flow, analogous to the operation of a GVS system.
 
-###This behavior demonstrates controlled bidirectional current flow, analogous to the operation of a GVS system.
 ---
 
 ## ⚙️ System Architecture
