@@ -2,8 +2,8 @@
 #include <WiFiUdp.h>
 
 // 🔥 WiFi credentials
-const char* ssid = "Anand S's S24";
-const char* password = "sirsigma";
+const char* ssid = "WiFi Name";
+const char* password = "WiFi Password";
 
 // 🔥 UDP setup
 WiFiUDP udp;
