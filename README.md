@@ -11,6 +11,7 @@ This project implements a real-time system that converts user input into a contr
 
 GVS involves applying a small electrical signal near the mastoid areas behind the ears, where the vestibular nerves are located. These nerves carry balance and orientation information from the inner ear to the brain. The electrical signal changes the firing rates of the nerve endings—making one side more active and the other less active. This creates a mismatch in the signals sent to the brain, which it interprets as movement or a change in direction. As a result, the body may feel like it is tilting or shifting, showing how electrical stimulation can influence the balance system.
 
+
 ---
 ## 🧠 Working Principle
 
@@ -25,6 +26,20 @@ During testing, the direction of this current determines the output:
 - The other LED lights up when the current reverses
   
 This behavior demonstrates controlled bidirectional current flow, analogous to the operation of a GVS system.
+
+### Current Limits
+
+The current through the LEDs is determined by the voltage difference between the DAC output and the 1.65V reference, divided by the 500Ω resistor:
+
+I = (V_in − 1.65) / 500
+
+Since the ESP32 DAC ranges from 0V to 3.3V, the maximum deviation from the reference is ±1.65V. This limits the current to approximately:
+
+- **Maximum current** ≈ +3.3 mA  
+- **Minimum current** ≈ −3.3 mA  
+
+The current is naturally limited by the 500Ω resistor, which prevents excessive current flow through the GVS. Additionally, the op-amp’s feedback mechanism ensures controlled operation, so the system cannot exceed these bounds under normal conditions.
+
 
 ---
 
