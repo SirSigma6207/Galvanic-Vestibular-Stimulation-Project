@@ -44,16 +44,17 @@ The current is naturally limited by the 500Ω resistor, which prevents excessive
 ---
 
 ## ⚙️ System Architecture
-<img width="724" height="343" alt="image" src="https://github.com/user-attachments/assets/9768f06d-e676-4bb5-8c5d-60de90ad1419" />
+<img width="736" height="338" alt="image" src="https://github.com/user-attachments/assets/fa1297a3-8097-4f85-8bf5-e6174342188a" />
+
 
 Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 
 
-- **Input Layer**: Keyboard control (A/D keys)
+- **Input Layer**: Keyboard control (A/D keys - in my case)
 - **Communication Layer**: UDP over WiFi
 - **Embedded System**: ESP32
 - **Analog Processing**: Op-amp (LM358)
-- **Output Layer**: Directional LED indication
+- **Output Layer**: Bidirectional current
 
 
 
@@ -62,7 +63,7 @@ Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 - ESP32
 - LM358 Op-Amp
 - Resistors (500Ω)
-- LEDs (2)  //testing purpouses
+- LEDs (testing purpouses)
 - Power Supply (±9V)
 - Breadboard & wiring
 - ECG patches
