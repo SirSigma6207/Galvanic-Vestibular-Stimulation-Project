@@ -44,6 +44,8 @@ The current is naturally limited by the 500Ω resistor, which prevents excessive
 ---
 
 ## ⚙️ System Architecture
+<img width="724" height="343" alt="image" src="https://github.com/user-attachments/assets/9768f06d-e676-4bb5-8c5d-60de90ad1419" />
+
 Keyboard → Python (UDP) → WiFi → ESP32 → DAC → Op-Amp → LEDs
 
 
