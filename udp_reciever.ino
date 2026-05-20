@@ -1,3 +1,5 @@
+//upload this to the microcontroller
+
 #include <WiFi.h>
 #include <WiFiUdp.h>
 
